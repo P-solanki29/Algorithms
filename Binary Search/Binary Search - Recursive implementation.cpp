@@ -1,9 +1,10 @@
+/* This is the implementation of Binary Search using recursion */
 #include <bits/stdc++.h>
 
 using namespace std;
 
 int BianrySrearch(int arr[], int low, int high, int x){
-   
+
         int mid = (low+(high-low)/2);
         if(low>high){
             return -1;
@@ -27,7 +28,7 @@ int main(){
     cin>>x;
     int index = BianrySrearch(arr,low,high, x);
     if(index != -1){
-        cout<<"The element is present ai index: "<< index;
+        cout<<"The element is present at index: "<< index;
     }
     else
     {
